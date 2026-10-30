@@ -1,0 +1,45 @@
+channels:
+  - "@Fx_Ai_Signals"
+  - "XAUUSD SIGNALS"
+  - "MARKET ANALYSIS"
+trading:
+  dry_run: false
+  lot_mode: fixed
+  fixed_lot: 0.01
+  risk_percent: 1.0
+  max_lot: 0.1
+  deviation: 30
+  magic_number: 882026
+  order_comment: TG-Signal
+  tp_strategy: first_only
+  require_sl: true
+  duplicate_window_seconds: 300
+  auto_detect_broker_suffix: true
+
+  # Multi-Instance MT5 Targeting (optional):
+  # Set target_login (e.g. 81964092) or target_path to lock to a specific MT5 instance.
+  # If left null and multiple instances are open, you will be prompted to choose.
+  target_login: null
+  target_path: null
+
+  symbol_mappings:
+    GOLD: XAUUSD
+    SILVER: XAGUSD
+    US30: DJ30
+    DJIA: DJ30
+    USA30: DJ30
+    WS30: DJ30
+    NAS100: USTEC
+    US100: USTEC
+    NASDAQ: USTEC
+    SPX500: US500
+    US500: US500
+    GER30: DE30
+    GER40: DE40
+    DAX: DE40
+    DE40: DE40
+    OIL: USOUSD
+    WTI: USOUSD
+    BRENT: UKOUSD
+    BTC: BTCUSD
+    ETH: ETHUSD
